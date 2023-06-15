@@ -1,0 +1,1422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+:root {
+  --MainthemeGreen: #018652;
+  --africaSeccolor: #f6c23a;
+  --CountrySeccolor: #028e2e;
+  --BusinesSeccolor: #4aa0ec;
+  --SportsSeccolor: #fd0000;
+  --WallSeccolor: #e75e09;
+  --EntertainSeccolor: #963a8c;
+  --NewsSeccolor: #1d5a99;
+  --tvSeccolor: #1d5a99;
+}
+
+a {
+  color: black;
+}
+
+body {
+  background-color: #d9d4d4;
+}
+
+.MainpageCon {
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  background-color: hsl(180deg 4% 95.1%);
+}
+
+/* .headerNavs {
+  background-color: var(--MainthemeGreen);
+  width: inherit;
+  position: relative;
+} */
+
+.All_links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 25px 10px;
+}
+header {
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+  width: 100%;
+  padding: 15px 0;
+  background-color: var(--MainthemeGreen);
+  position: relative;
+  z-index: 9999999999;
+  height: 50px;
+}
+
+.open-button span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.login .login_icon {
+  filter: invert(1);
+}
+
+.logo {
+  width: 171px;
+  float: right;
+  margin: 14px 7px 0px 0px;
+}
+
+.Navcontents {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0px 10px;
+}
+
+.Pagetitle,
+.Logo,
+.loginsettings {
+  display: inline-block;
+  color: white;
+}
+.Logo img {
+  max-width: 230px;
+}
+.loginsettings img {
+  width: 15px;
+}
+.Pagetitle {
+  padding: 25px 0px 0px 10px;
+}
+.loginsettings {
+  padding: 25px 10px 0px 0px;
+}
+
+.ContentArea {
+  background-color: white;
+  height: max-content;
+}
+
+.Allheadlines {
+  display: grid;
+}
+
+.HeadlineCon {
+  height: 100px;
+  display: grid;
+  align-items: center;
+  background: linear-gradient(45deg, #19757e, #10476f);
+  border-bottom: 3px solid #06e6b9;
+}
+
+.headline_post1 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.headline_post1 {
+  animation-name: fade;
+  animation-duration: 0.8s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.posttitle {
+  display: flex;
+}
+
+.posttitle h4 {
+  font-size: 12px;
+}
+
+/* 
+ here are color tags for the headline tag design
+ --------------------------------------------------  */
+
+.NewsType {
+  border-right: 14px solid var(--NewsSeccolor);
+}
+.AfricaType {
+  border-right: 14px solid var(--africaSeccolor);
+}
+.EntertainType {
+  border-right: 14px solid var(--EntertainSeccolor);
+}
+.BusinessType {
+  border-right: 14px solid var(--BusinesSeccolor);
+}
+.FoodType {
+  border-right: 14px solid var(--WallSeccolor);
+}
+.SportsType {
+  border-right: 14px solid var(--SportsSeccolor);
+}
+
+#Newtag {
+  background-color: #ffffff;
+  padding: 2px 8px;
+  text-transform: uppercase;
+}
+
+.AfricaType,
+.EntertainType,
+.BusinessType,
+.FoodType,
+.SportsType,
+.NewsType {
+  text-align: center;
+  top: 10px;
+  left: 9px;
+  position: absolute;
+  padding: 2% 10px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* --------------------------------------------------------------------- */
+
+.headline_post1 p {
+  padding: 10px 0px 0px 0px;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.adSpace {
+  width: 300px;
+  height: 250px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.adSpace img {
+  width: 90%;
+  height: 100%;
+}
+
+.middleArea {
+  min-height: 700px;
+  padding: 10px 10px 96px 10px;
+}
+
+.interactCon {
+  transform: translate(3px, -132px);
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  z-index: 80;
+  width: 23px;
+  filter: brightness(42.5);
+}
+
+.IconsBg {
+  height: 100%;
+  width: 0;
+  box-shadow: 0 0 40px 64px rgb(0 0 0 / 18%);
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+.interactCon2 {
+  position: absolute;
+  right: 16px;
+  top: 5px;
+  z-index: 80;
+  width: 23px;
+}
+
+.interactCon span {
+  font-size: 14px;
+}
+
+.interactCon img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.interactCon a {
+  margin-bottom: 5px;
+  display: inline-block;
+  margin: 4px 0px 8px;
+  color: white;
+}
+
+.Interract2 {
+  position: absolute;
+  filter: contrast(0.5);
+  font-size: 12px;
+  display: inline-flex;
+  gap: 13px;
+  bottom: 5px;
+}
+
+.Interract2 .interact-icon {
+  width: 15px;
+  object-fit: cover;
+}
+
+.Interract2 a {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  height: 20px;
+  margin: 0px 9px 0px 0px;
+  /* background-color: aqua; */
+}
+
+span.time {
+  display: inline-flex;
+  font-size: 12px;
+  color: #767171;
+  position: absolute;
+  bottom: 7px;
+  right: -1px;
+  height: 15px;
+  gap: 3px;
+  background-color: white;
+  padding: 0px 6px 0px 2px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+span.time .icon img {
+  width: 14px;
+}
+
+.Spost {
+  width: 50%;
+  height: 150px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Spost .ArticleTitleCon h3 {
+  font-size: 12px;
+}
+
+.Spost .ArticleTitleCon p {
+  font-size: 10px;
+}
+
+.ArticleTitleCon {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  z-index: 100;
+  text-align: center;
+}
+
+.Spost .ArticleTitleCon {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  z-index: 100;
+  text-align: center;
+}
+
+.Spost .texthere {
+  color: white;
+  z-index: 100;
+  padding: 4px 5px;
+}
+
+.ArticleConfilter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.5;
+  background-image: linear-gradient(transparent, rgb(8, 8, 8));
+}
+
+.RecAd img {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.Smallposts {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+}
+
+.Tabs {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.NMbutton {
+  padding: 10px 0px;
+  width: 50%;
+  text-align: center;
+  background-image: linear-gradient(#0fc6ca, #10e1c1);
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.NMbutton:hover {
+  background-image: linear-gradient(#079ea0, #06a990);
+  color: white;
+}
+
+.NMbutton--active {
+  border-bottom: 6px solid rgb(175, 187, 198);
+}
+
+.Pagination {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Pagination ul {
+  text-align: center;
+}
+
+.Pagination a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.Pagination a:hover {
+  color: black;
+  color: rgb(181, 181, 181);
+}
+
+.numb {
+  padding: 2px 15px;
+  color: black;
+}
+
+.numb:hover {
+  color: rgb(181, 181, 181);
+}
+
+/* CSS New and most read stories 
+------------------------------------------*/
+
+.storyGrp {
+  max-height: 130px;
+  margin: 10px 0px 10px 0px;
+  position: relative;
+  display: flex;
+  gap: 12px;
+  /* border-bottom: 1px solid rgb(204, 204, 204); */
+  padding: 0px 0px 10px 0px;
+}
+
+.PhotoCon {
+  position: relative;
+  width: 150px;
+  height: 95px;
+}
+
+.PhotoCon img {
+  width: inherit;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 0%;
+  border-radius: 5px;
+}
+.Storytitle {
+  width: auto;
+  position: relative;
+}
+
+.Storytitle p {
+  width: 80%;
+  color: #777777;
+  font-size: 12px;
+  overflow: hidden;
+  height: 30px;
+  margin: 0.7em 0px 0.5em;
+}
+
+.Storytitle h3 {
+  font-weight: 500;
+  font-size: 16px;
+  height: 54px;
+  margin: 0px 0px 21px;
+  overflow: hidden;
+}
+
+.ReporterCon {
+  height: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.ReporterNameCon,
+.ReportdateTime {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.reporterName,
+.ReportdateTime {
+  font-size: 12px;
+}
+
+.ReporterNameCon img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.VideoContent {
+  background-color: black;
+  margin: 0px 0px 25px 0px;
+}
+
+.topVideBar {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topVideBar a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.Vidtitle {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.VideoCon {
+  position: relative;
+}
+
+.MainVideo {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  height: 300px;
+  margin-bottom: 5px;
+}
+
+.VideoCon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playIcon {
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  z-index: 100;
+  width: 67px;
+}
+
+.thumbnail-Videos {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  overflow: auto;
+  color: white;
+}
+
+.vid1 {
+  width: 320px;
+  height: 100px;
+  display: flex;
+}
+
+.vid1 img {
+  width: 260px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vid1 p {
+  padding: 9px 0px 0px 10px;
+  margin: 0;
+}
+
+/* CSS for articles the Aritcle groups on the homepage
+----------------------------------------------------------  */
+
+.SectionGrp {
+  margin: 0px 0px 45px 0px;
+}
+
+.post {
+  padding: 10px 0px 30px 0px;
+}
+
+.post--news {
+  /* border-top: 4px solid var(--NewsSeccolor); */
+  border-bottom: 4px solid var(--NewsSeccolor);
+}
+
+.post--africa {
+  border-bottom: 4px solid var(--africaSeccolor);
+}
+
+.post--sports {
+  border-bottom: 4px solid var(--SportsSeccolor);
+}
+.post--entertainment {
+  border-bottom: 4px solid var(--EntertainSeccolor);
+}
+
+.post .btn {
+  border-radius: 35px;
+  float: right;
+  margin: 13px auto;
+  padding: 8px 20px;
+}
+
+.post--news .btn {
+  color: white;
+  background-color: var(--NewsSeccolor);
+}
+
+.post--africa .btn {
+  color: white;
+  background-color: var(--africaSeccolor);
+}
+
+.post--sports .btn {
+  color: white;
+  background-color: var(--SportsSeccolor);
+}
+
+.post--entertainment .btn {
+  color: white;
+  background-color: var(--EntertainSeccolor);
+}
+
+/* --------------------------------------------------------------------- */
+
+/* .........................................................................
+Mobile Tab CSS
+......................................................................... */
+
+.TabContainer {
+  width: 100%;
+  background-color: #f2f3f3;
+  margin: 0 auto;
+  position: relative;
+}
+
+.MainTABS {
+  width: 100%;
+  max-width: 100%;
+  height: 70px;
+  border-radius: 18px 18px 0px 0px;
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  display: flex;
+  background-color: #f6f6f6;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 0px 10px;
+  filter: drop-shadow(0px 3px 4px black);
+}
+
+.MainTABS a {
+  width: 20%;
+  display: grid;
+  row-gap: 3px;
+  place-content: center;
+  text-decoration: none;
+}
+.nav-item--icon {
+  width: 30px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav-item--icon img {
+  width: inherit;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-item--title {
+  font-size: 10px;
+  display: block;
+  color: #212121;
+  margin-top: 6px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.discover_btn .nav-item--icon img {
+  padding: 4px;
+  border-radius: 50%;
+  transform: scale(1.3);
+  background-color: var(--MainthemeGreen);
+}
+
+/* ............................................................................ */
+/* search field */
+.search-container {
+  display: grid;
+  place-items: center;
+  margin-bottom: 15px;
+}
+.input-group__input {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+}
+.search-button {
+  padding: 0.7rem 1rem;
+  margin-left: -10px;
+  border: 1px solid #c2c2c2;
+  border-radius: 0 4px 4px 0;
+}
+.search-button span img {
+  width: 15px;
+  height: auto;
+}
+.search-button form {
+  width: 200px;
+  margin: 0 auto;
+  /* transform: translateX(82px); */
+  display: flex;
+}
+/* End */
+.InnerTabs {
+  position: relative;
+  padding: 0px 15px 25px 15px;
+}
+.MainSections h1,
+.SubSections h1 {
+  padding: 10px 0px;
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  border-bottom: 1px solid rgb(208, 207, 207);
+  margin-bottom: 20px;
+}
+
+.MainSecBTNS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+.SecBtn {
+  width: 49%;
+  height: 65px;
+  border-radius: 6px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(33, 65, 141, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+}
+
+.SecBtn h2 {
+  font-size: 15px;
+}
+
+.btnID {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  width: 8px;
+  height: 18px;
+}
+
+.btnID--news {
+  background-color: var(--NewsSeccolor);
+}
+.btnID--politics {
+  background-color: var(--NewsSeccolor);
+}
+.btnID--business {
+  background-color: var(--BusinesSeccolor);
+}
+.btnID--sports {
+  background-color: var(--SportsSeccolor);
+}
+.btnID--tvRadio {
+  background-color: var(--tvSeccolor);
+}
+.btnID--entertain {
+  background-color: var(--EntertainSeccolor);
+}
+.btnID--africa {
+  background-color: var(--africaSeccolor);
+}
+.btnID--wall {
+  background-color: var(--WallSeccolor);
+}
+.btnID--country {
+  background-color: var(--CountrySeccolor);
+}
+
+.Submenu {
+  overflow: hidden;
+  /* height: 40px; */
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(33, 65, 141, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  position: relative;
+  margin: 10px 0px;
+}
+
+.topSub {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.Submenu h2 {
+  font-size: 18px;
+}
+.map a,
+.map h2,
+.map p {
+  color: white;
+}
+.toggle-btn1,
+.toggle-btn2,
+.toggle-btn3,
+.toggle-btn4,
+.toggle-btn5,
+.toggle-btn6,
+.toggle-btn7 {
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  gap: 3px;
+}
+
+.dot {
+  background-color: #079ea0;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+}
+
+.Submenu--news .dot {
+  background-color: var(--NewsSeccolor);
+}
+.Submenu--business .dot {
+  background-color: var(--BusinesSeccolor);
+}
+.Submenu--politics .dot {
+  background-color: var(--NewsSeccolor);
+}
+.Submenu--Sports .dot {
+  background-color: var(--SportsSeccolor);
+}
+.Submenu--TvRadio .dot {
+  background-color: var(--tvSeccolor);
+}
+.Submenu--entertain .dot {
+  background-color: var(--EntertainSeccolor);
+}
+.Submenu--africa .dot {
+  background-color: var(--africaSeccolor);
+}
+.Submenu--country .dot {
+  background-color: var(--CountrySeccolor);
+}
+.Submenu--wall .dot {
+  background-color: var(--WallSeccolor);
+}
+
+.Submenu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+  padding: 3px 5px 10px 5px;
+  text-align: center;
+}
+.subbtn {
+  flex-grow: 1;
+  text-decoration: none;
+  padding: 10px 20px;
+  width: 150px;
+  text-align: center;
+  background: #f2f3f3;
+}
+
+.subbtn:hover {
+  background: linear-gradient(#828b89, #778080);
+  color: white;
+}
+
+.AllfeautreTab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.FTab {
+  flex-basis: auto;
+  width: 49%;
+  padding: 20px 0px;
+  background-color: white;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(33, 65, 141, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+
+  text-decoration: none;
+}
+
+.FTab img {
+  width: 40px;
+}
+
+.AllshowsCon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.showCon {
+  width: 150px;
+}
+.showCon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.SubscribeCon {
+  background: linear-gradient(#27464c, #243c44);
+  padding: 40px 0px;
+  text-align: center;
+  margin: 15px 0px 0px 0px;
+}
+
+.SubscribeCon input {
+  padding: 10px 60px;
+  margin: 0px 0px 0px 20px;
+  border: 0;
+  border-radius: 12px;
+  outline: none;
+}
+
+.SubscribeCon span {
+  display: block;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.CopyrightMap {
+  background-color: #018652;
+  /* background: linear-gradient(#277d8b,#279696); */
+  height: max-content;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  text-align: center;
+  padding: 10px 0px 83px;
+}
+
+.sitelogoCon {
+  padding: 10px 0px;
+}
+
+.sitelogoCon img {
+  width: 150px;
+}
+
+.Map {
+  margin: 0 auto;
+  color: white;
+}
+.Map a {
+  color: white;
+}
+
+.Map h2 {
+  font-size: 19px;
+  padding: 0px 9px 0px;
+  display: inline-block;
+  margin: 8px 0px;
+}
+
+.Socials {
+  display: flex;
+  justify-content: center;
+}
+
+.IconsCon {
+  display: flex;
+  gap: 31px;
+  align-items: center;
+  margin: 5px 0px 0px;
+}
+
+.IconsCon .icon {
+  width: 30px;
+  filter: invert(100);
+}
+
+.icon img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.map p {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.6em;
+  padding: 10px;
+}
+
+@media screen and (max-width: 540px) {
+  .AllfeautreTab {
+    gap: 10px;
+  }
+
+  .FTab {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .AllfeautreTab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .FTab img {
+    width: 32px;
+  }
+
+  .SubscribeCon input {
+    padding: 10px 43px;
+    margin: 10px 0px 0px 20px;
+    border: 0;
+    border-radius: 12px;
+    outline: none;
+    color: black;
+  }
+
+  .tab {
+    width: 67px;
+    color: black;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .reporterName,
+  .ReportdateTime {
+    font-size: 10px;
+  }
+}
+
+/* 
+CSS for single page ..................................................... */
+
+.SpageContainer {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 10px 10px 96px 10px;
+}
+
+.HeadNav {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+}
+
+.HeadNav--entertain {
+  border-bottom: 3px solid var(--EntertainSeccolor);
+  background-color: #ebebeb;
+  padding: 10px;
+}
+
+.HeadNav--entertain a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* .htab--1 {
+    border-radius: 18px 0px 0px 0px;
+    background-color: rgb(197, 197, 197);
+    padding: 10px 40px;
+    margin-right: -20px;
+}
+
+.htab--2{
+    border-radius: 18px 18px 0px 0px;
+    background-color: var(--EntertainSeccolor);
+    padding: 10px 30px;
+} */
+
+.ArtTitle_socialIcons {
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.ArtTitle_socialIcons h1 {
+  width: 80%;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 15px 0px 10px 0px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.socialIcons {
+  width: max-content;
+  margin: 0 auto;
+  float: right;
+}
+
+.socialIcons .icon img {
+  width: 25px;
+}
+
+.listenIcon {
+  font-size: 14px;
+  font-weight: 600;
+  float: left;
+  display: inline;
+}
+
+.listenIcon img {
+  width: 15px;
+}
+
+.date_journalistname {
+  float: right;
+  display: inline-flex;
+  gap: 4px;
+}
+
+.ArtDate {
+  font-size: 12px;
+  color: grey;
+}
+
+.ArticlePhotoCon img {
+  width: 100%;
+  object-fit: cover;
+  padding: 10px 0px;
+}
+
+.Article_text p,
+.Article_text h5 {
+  font-size: 15px;
+  padding: 5px 0px;
+}
+
+.RelatedStories .NMbutton {
+  padding: 10px 0px;
+  width: 50%;
+  text-align: center;
+  background-image: linear-gradient(#c9cbcb, #e0e0e0);
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.RelatedStories .Tabs {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0px;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.PostTime {
+  position: absolute;
+  top: 0;
+  left: 60px;
+}
+
+.FormPage {
+  padding: 7px 0px 0px 0px;
+  width: 100%;
+  margin: 0 auto;
+  height: max-content;
+  background-color: #06a990;
+  text-align: center;
+}
+
+.header_search {
+  height: 35px;
+  margin: 15px auto;
+  position: relative;
+  width: 95%;
+}
+
+.header_search input {
+  border: none !important;
+  font-size: 15px;
+  background: #fff;
+  height: 35px;
+  padding: 4px 8px;
+  /* color: #fff; */
+  position: absolute;
+  width: 100%;
+  border-radius: 4px;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  width: 100% !important;
+}
+
+.mobile-menu {
+  width: inherit;
+  background-color: #06a990;
+}
+
+.header_search .btn-search {
+  background-size: 228px;
+  background-position: -85px 3px;
+}
+
+.dashboard-right {
+  width: auto;
+  float: none;
+  margin: -3px 0 !important;
+  border: solid 1px #eccec7;
+}
+
+.home_display {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 20px 10px 50px;
+  border: 0;
+  /* background: transparent; */
+  background: linear-gradient(0deg, #e6e7e7, #e7e9e9);
+}
+
+.login_formWrap {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.login_formWrap h1 {
+  margin: 0 0 10px;
+  /* color: #ffffff; */
+  color: #1a6780;
+  width: auto;
+  padding: 0 0 10px;
+  font-size: 19px;
+  float: none;
+  text-align: center;
+  border-bottom: solid 1px #1db099;
+}
+
+.login_form {
+  padding: 0 20px 35px 10px;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+.login_formWrap label {
+  width: 100%;
+  float: none;
+  border: 0;
+  margin: 5px auto;
+  display: inline-block;
+  text-align: left;
+}
+
+.login_formWrap label input {
+  padding: 9px;
+  width: 100%;
+  border: solid 1px #ffffff;
+  margin: 0 !important;
+  border-radius: 11px;
+  /* box-shadow: 1px 5px 5px 0 rgba(33,65,141,.2), 0 0 2px 0 rgba(0,0,0,.12); */
+}
+
+.login_formWrap label span {
+  margin-bottom: 5px;
+  display: inline-block;
+  font-size: 13px;
+  color: #1a6780;
+  /* color: #ffffff; */
+  font-weight: 400;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 13px;
+  /* font-size: 100%; */
+  margin: 0;
+  vertical-align: baseline;
+  /* vertical-align: middle; */
+}
+
+.login_formWrap button#submit[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 24px;
+  /* background: #059d9f; */
+  /* background: linear-gradient(181deg,#d8ebeb, #9ad8d8); */
+  background: linear-gradient(181deg, #018652, #056c43);
+  /* border-bottom: solid 3px #2a5265; */
+  color: #ffffff;
+  padding: 12px 0;
+  font-size: 17px;
+  display: block;
+  margin: 4px 0;
+  display: block;
+  font-weight: 700;
+  margin: 10px 0 !important;
+}
+
+.login_formWrap button#alt-login {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  /* background: #057273; */
+  /* background: linear-gradient(181deg,#d8ebeb, #9ad8d8); */
+  background: linear-gradient(181deg, #018652, #056c43);
+  border-bottom: none;
+  color: #ffffff;
+  padding: 13px 0;
+  font-size: 14px;
+  display: block;
+  margin: 4px 0;
+  display: block;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.sub_cap strong {
+  color: #3a708a;
+  font-weight: bold;
+}
+
+.LoginIntroText {
+  display: flex;
+  width: 100%;
+  padding: 23px 8px;
+  color: white;
+  background: linear-gradient(234deg, #06a990, #0e9b87);
+  /* background: linear-gradient(181deg, #f0f0f0, #e4e6e6); */
+}
+
+.LoginIntroText h1 {
+  color: white;
+  font-size: 21px;
+  text-transform: capitalize;
+}
+
+.LoginPhoto {
+  width: 34%;
+  margin: 0 auto;
+}
+
+.LoginText {
+  width: 62%;
+  padding: 0px 20px;
+}
+
+.topPost2 {
+  width: 100%;
+  height: 300px;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.topPost2 .TpostPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  border-radius: 10px;
+}
+
+.ArticleTitleTimeofPost {
+  position: relative;
+  margin-top: -116px;
+  text-align: center;
+  background-image: linear-gradient(transparent, rgb(0 0 0 / 94%));
+}
+
+.ArticleTitleTimeofPost span.time {
+  display: inline-flex;
+  font-size: 12px;
+  color: #767171;
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  /* margin: 0 auto; */
+  transform: translate(17px, 0px);
+  height: 15px;
+  gap: 3px;
+  background-color: white;
+  padding: 0px 6px 0px 2px;
+  border-radius: 0px;
+}
+
+.texthere {
+  color: white;
+  padding: 16px 11px;
+}
+
+.texthere h3 {
+  font-size: 17px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  height: 60px;
+  overflow: hidden;
+}
