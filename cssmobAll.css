@@ -19,6 +19,7 @@ h2 {
   --EntertainSeccolor: #963a8c;
   --NewsSeccolor: #1d5a99;
   --tvSeccolor: #1d5a99;
+  --opinionSeccolor: #d1a34d;
 }
 
 a {
@@ -56,7 +57,7 @@ header {
   background-color: var(--MainthemeGreen);
   position: relative;
   z-index: 9999999999;
-  height: 50px;
+  height: 55px;
 }
 
 .open-button span {
@@ -538,6 +539,7 @@ span.time .icon img {
   object-fit: cover;
 }
 
+/* Play video icon */
 .playIcon {
   position: absolute;
   top: 12px;
@@ -546,6 +548,17 @@ span.time .icon img {
   width: 67px;
 }
 
+.play-section {
+  top: 10px;
+  left: 156px;
+  width: 40px !important;
+}
+.play-section-small {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px !important;
+}
 .thumbnail-Videos {
   width: 100%;
   display: flex;
@@ -709,6 +722,10 @@ Mobile Tab CSS
   padding: 0.7rem 2.9rem;
   border: 0.5px solid var(--MainthemeGreen);
   border-radius: 4px;
+
+  @media (max-width: 350px) {
+    padding: 0.7rem 0.75rem;
+  }
 }
 .search-button {
   padding: 0.7rem 1rem;
@@ -730,6 +747,34 @@ Mobile Tab CSS
   display: flex;
 }
 /* End */
+
+.OpinionGrp {
+  border-bottom: 4px solid var(--opinionSeccolor);
+  padding: 10px 0px 30px 0px;
+  margin: 0px 0px 25px 0px;
+}
+.OpinionGrp .btn {
+  border-radius: 35px;
+  float: right;
+  margin: 13px auto;
+  padding: 8px 20px;
+  color: white;
+  background-color: var(--opinionSeccolor);
+}
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.section-title h1 {
+  background-color: #dfdfdf;
+  border-right: 15px solid var(--opinionSeccolor);
+  color: #000;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 20px;
+}
 .InnerTabs {
   position: relative;
   padding: 0px 15px 25px 15px;
